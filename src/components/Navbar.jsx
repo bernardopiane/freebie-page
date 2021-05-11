@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
+import Logo from "./Logo";
 import MyButton from "./MyButton";
 
 const Wrapper = styled.div`
@@ -29,22 +30,14 @@ const LinkArea = styled.div`
   }
 `;
 
-const Logo = styled.div`
-  font-size: 30px;
-  font-weight: bold;
-  span {
-    color: #fcae61;
-  }
-`;
+
 
 export default function Navbar() {
   return (
     <Wrapper>
       <Container>
         <Content>
-          <Logo>
-            <span>App</span>Lab
-          </Logo>
+          <Logo />
           <LinkArea>
             <div>Home</div>
             <div>Key Features</div>

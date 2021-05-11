@@ -5,13 +5,17 @@ import FaqItem from "./FaqItem";
 import Text from "./Text";
 import Title from "./Title";
 
+const Wrapper = styled.div`
+  padding: 3em 0;
+`;
+
 const ItemArea = styled.div`
   margin: 2em 0;
 `;
 
 export default function FAQ() {
   return (
-    <div>
+    <Wrapper>
       <Container>
         <Title center>Frequently asked questions</Title>
         <Text center>
@@ -51,6 +55,6 @@ export default function FAQ() {
           />
         </ItemArea>
       </Container>
-    </div>
+    </Wrapper>
   );
 }

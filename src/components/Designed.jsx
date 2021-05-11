@@ -9,8 +9,6 @@ import Title from "./Title";
 const Wrapper = styled.div`
   padding: 3em 0;
   display: flex;
-  margin-left: 15em;
-  margin-right: 15em;
   justify-content: space-around;
   font-family: "Poppins", sans-serif;
   align-items: center;
@@ -24,7 +22,7 @@ const Wrapper = styled.div`
 `;
 
 const MyImage = styled(Image)`
-  /* margin-right: 3em; */
+  margin-left: 10em;
   @media (max-width: 1400px) {
     display: none;
   }
@@ -70,7 +68,21 @@ const CenterCol = styled(Col)`
 export default function Designed() {
   return (
     <Wrapper>
-      <Container fluid>
+      <MyImage fluid src={DesignImage} />
+      <Container>
+        <Row>
+          <Col xl={{ offset: 2, span: 8 }}>
+            <Title>Designed & built by the latest code integration</Title>
+            <Text>
+              The rise of mobile devices transforms the way we consume
+              information entirely and the world's most elevant channels such as
+              Facebook.
+            </Text>
+            <MyButton title="Learn more" />
+          </Col>
+        </Row>
+      </Container>
+      {/* <Container fluid>
         <Row>
           <MyCol lg={{ offset: 1, span: 4 }}>
             <MyImage src={DesignImage} fluid />
@@ -87,7 +99,7 @@ export default function Designed() {
             </Content>
           </CenterCol>
         </Row>
-      </Container>
+      </Container> */}
     </Wrapper>
   );
 }

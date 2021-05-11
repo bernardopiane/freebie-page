@@ -30,6 +30,7 @@ const SummaryTitle = styled.div`
   color: #242f51;
   font-size: 20px;
   font-weight: 600;
+  user-select: none;
 `;
 
 const DetailsDesc = styled.div`
@@ -40,7 +41,7 @@ export default function FaqItem({ title, desc }) {
   return (
     <Wrapper>
       <Details>
-        <Summary open>
+        <Summary>
           <SummaryTitle>{title}</SummaryTitle>
           <AiOutlinePlus size={24} color={"#242f51"} />
         </Summary>

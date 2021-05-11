@@ -6,8 +6,10 @@ import Companies from "../components/Companies";
 import Designed from "../components/Designed";
 import FAQ from "../components/FAQ";
 import Features from "../components/Features";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Jackpot from "../components/Jackpot";
+import Trial from "../components/Trial";
 import Ultimate from "../components/Ultimate";
 
 export default function Homepage() {
@@ -23,6 +25,8 @@ export default function Homepage() {
       <Charges />
       <Clients />
       <FAQ />
+      <Trial />
+      <Footer />
     </div>
   );
 }
