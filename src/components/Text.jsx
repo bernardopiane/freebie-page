@@ -4,7 +4,7 @@ import styled from "styled-components";
 const Typography = styled.div`
   color: #616368;
   text-align: ${(props) => (props.center ? "center" : "start")};
-  @media (max-width: 800px) {
+  @media (max-width: 600px) {
     text-align: center;
   }
 `;
