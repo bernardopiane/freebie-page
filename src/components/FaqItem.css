@@ -1,0 +1,8 @@
+details summary svg {
+  transition: transform 125ms ease;
+}
+
+details[open] summary svg {
+  transition: transform 125ms ease;
+  transform: rotate(45deg);
+}

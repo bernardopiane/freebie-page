@@ -7,7 +7,7 @@ const Typography = styled.div`
   position: relative;
   font-weight: bold;
   margin-bottom: 1em 0;
-  max-width: 450px;
+  /* max-width: 450px; */
   text-align: ${(props) => (props.center ? "center" : "start")};
   @media (max-width: 800px) {
     text-align: center;

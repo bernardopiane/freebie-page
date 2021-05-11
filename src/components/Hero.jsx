@@ -30,6 +30,7 @@ const FlexBlock = styled.div`
     justify-content: end;
     @media (max-width: 800px) {
       display: none;
+      overflow: hidden;
     }
     @media (max-width: 1000px) {
       position: absolute;

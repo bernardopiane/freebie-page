@@ -1,8 +1,10 @@
 import React from "react";
 import Charges from "../components/Charges";
 import ChooseApp from "../components/ChooseApp";
+import Clients from "../components/Clients";
 import Companies from "../components/Companies";
 import Designed from "../components/Designed";
+import FAQ from "../components/FAQ";
 import Features from "../components/Features";
 import Hero from "../components/Hero";
 import Jackpot from "../components/Jackpot";
@@ -19,6 +21,8 @@ export default function Homepage() {
       <ChooseApp />
       <Ultimate />
       <Charges />
+      <Clients />
+      <FAQ />
     </div>
   );
 }
